@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-18T15:00:42 IST" name="Suite" finished-at="2023-07-18T15:00:56 IST" duration-ms="13442">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="Error_Validation_Test.LoginErrorValidation()[pri:0, instance:packagestandalonetest.Error_Validation_Test@7c1e2a9e]" name="LoginErrorValidation" class="packagestandalonetest.Error_Validation_Test"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2023-07-18T15:00:42 IST" name="Submit_Order_Test" finished-at="2023-07-18T15:00:42 IST" duration-ms="35">
+    </test> <!-- Submit_Order_Test -->
+    <test started-at="2023-07-18T15:00:42 IST" name="Product_Validation_Test" finished-at="2023-07-18T15:00:56 IST" duration-ms="13442">
+      <class name="packagestandalonetest.Error_Validation_Test">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:packagestandalonetest.Error_Validation_Test@7c1e2a9e]" started-at="2023-07-18T15:00:43 IST" name="LaunchApplication" finished-at="2023-07-18T15:00:55 IST" duration-ms="12047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:packagestandalonetest.Error_Validation_Test@7c1e2a9e]" started-at="2023-07-18T15:00:55 IST" name="LoginErrorValidation" finished-at="2023-07-18T15:00:56 IST" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:packagestandalonetest.Error_Validation_Test@7c1e2a9e]" started-at="2023-07-18T15:00:56 IST" name="tearDown" finished-at="2023-07-18T15:00:56 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- packagestandalonetest.Error_Validation_Test -->
+    </test> <!-- Product_Validation_Test -->
+  </suite> <!-- Suite -->
+</testng-results>
