@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-19T12:41:05 IST" name="Suite" finished-at="2023-07-19T12:41:36 IST" duration-ms="30525">
+    <groups>
+      <group name="Purchase">
+        <method signature="Submit_Order_Test.submitOrder(java.util.HashMap)[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" name="submitOrder" class="packagestandalonetest.Submit_Order_Test"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2023-07-19T12:41:05 IST" name="Product_Validation_Test" finished-at="2023-07-19T12:41:05 IST" duration-ms="28">
+    </test> <!-- Product_Validation_Test -->
+    <test started-at="2023-07-19T12:41:05 IST" name="Submit_Order_Test" finished-at="2023-07-19T12:41:36 IST" duration-ms="30525">
+      <class name="packagestandalonetest.Submit_Order_Test">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:05 IST" name="LaunchApplication" finished-at="2023-07-19T12:41:13 IST" duration-ms="7832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:13 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-19T12:41:30 IST" duration-ms="16573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Johnwick123, email=johnwick123@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:30 IST" name="tearDown" finished-at="2023-07-19T12:41:30 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:30 IST" name="LaunchApplication" finished-at="2023-07-19T12:41:34 IST" duration-ms="4102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:34 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-19T12:41:35 IST" duration-ms="1544" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=JohnDurai#123, email=jdmaster@gmail.com, productName=ADDIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at page_object_model.Product_Catalog.addProducttoCart(Product_Catalog.java:61)
+at packagestandalonetest.Submit_Order_Test.submitOrder(Submit_Order_Test.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:packagestandalonetest.Submit_Order_Test@66d18979]" started-at="2023-07-19T12:41:35 IST" name="tearDown" finished-at="2023-07-19T12:41:36 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- packagestandalonetest.Submit_Order_Test -->
+    </test> <!-- Submit_Order_Test -->
+  </suite> <!-- Suite -->
+</testng-results>
